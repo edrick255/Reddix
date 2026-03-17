@@ -303,3 +303,15 @@ body::after {
         transform: translate(-50px, -50px);
     }
 }
+/* ===== CAMBIO DE COLOR A NEGRO PARA PREGUNTAS, BOTONES Y RESULTADOS ===== */
+.question p {
+    color: black !important;  /* Texto de las preguntas */
+}
+
+button, .option {
+    color: black !important;  /* Texto de los botones/respuestas */
+}
+
+#result {
+    color: black !important;   /* Texto del resultado final */
+}
