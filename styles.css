@@ -28,18 +28,54 @@ body {
 }
 
 /* Títulos */
+/* ===== TÍTULO REDDIX 3D Y ANIMADO ===== */
 .title {
-    font-size: 3rem;
-    font-weight: bold;
-    background: linear-gradient(45deg, #ffcc00, #ff6600);
+    font-size: 4rem; /* Más grande para resaltar */
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+
+    color: #ff5e5e;
+    text-shadow: 
+        2px 2px 0 #ffbaba,
+        4px 4px 0 #ffa3a3,
+        6px 6px 0 #ff8c8c,
+        8px 8px 8px rgba(0,0,0,0.3); /* Efecto 3D */
+
+    animation: bounceGlow 2s infinite alternate;
+    background: linear-gradient(45deg, #ff9aa2, #ffd166);
     -webkit-background-clip: text;
     color: transparent;
-    text-shadow: 
-        2px 2px 0 #ff6600,
-        4px 4px 10px rgba(0,0,0,0.5);
-    animation: glow 2s ease-in-out infinite alternate;
 }
 
+/* Animación de glow y bounce */
+@keyframes bounceGlow {
+    0% {
+        text-shadow: 
+            2px 2px 0 #ffbaba,
+            4px 4px 0 #ffa3a3,
+            6px 6px 0 #ff8c8c,
+            8px 8px 8px rgba(0,0,0,0.3);
+        transform: translateY(0px);
+    }
+    50% {
+        text-shadow: 
+            3px 3px 0 #ffbaba,
+            6px 6px 0 #ffa3a3,
+            9px 9px 0 #ff8c8c,
+            12px 12px 12px rgba(0,0,0,0.4);
+        transform: translateY(-5px);
+    }
+    100% {
+        text-shadow: 
+            2px 2px 0 #ffbaba,
+            4px 4px 0 #ffa3a3,
+            6px 6px 0 #ff8c8c,
+            8px 8px 8px rgba(0,0,0,0.3);
+        transform: translateY(0px);
+    }
+}
 .subtitle {
     font-size: 0.9rem;
     color: #aaa;
