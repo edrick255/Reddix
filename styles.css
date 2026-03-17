@@ -341,3 +341,41 @@ button.option:hover {
     background: rgba(255, 255, 255, 0.5) !important; /* Fondo claro */
     box-shadow: 0 0 10px rgba(0,0,0,0.2) !important;
 }
+/* ===== INTEGRACIÓN COMPLETA PARA TEXTO NEGRO LEGIBLE ===== */
+
+/* Preguntas */
+.question p {
+    color: black !important; /* Texto de las preguntas en negro */
+}
+
+/* Botones / opciones */
+button.option,
+button.option.selected {
+    color: black !important; /* Texto negro */
+    background: linear-gradient(135deg, #fff9c4, #ffe082) !important; /* Fondo más claro para contraste */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important; /* Sombra suave */
+}
+
+/* Hover de botones */
+button.option:hover {
+    background: linear-gradient(135deg, #fff59d, #ffd54f) !important;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15) !important;
+}
+
+/* Botón principal y reset */
+#analyze, #reset {
+    color: black !important;
+    background: linear-gradient(45deg, #ffcc80, #ffe082) !important;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15) !important;
+}
+
+#analyze:hover, #reset:hover {
+    background: linear-gradient(45deg, #ffd54f, #fff176) !important;
+}
+
+/* Resultado final */
+#result {
+    color: black !important;
+    background: rgba(255, 255, 255, 0.5) !important; /* Fondo semitransparente claro */
+    box-shadow: 0 0 10px rgba(0,0,0,0.2) !important;
+}
